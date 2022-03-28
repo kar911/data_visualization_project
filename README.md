@@ -4,3 +4,5 @@ it is a project of data visualization based on INDIA's GDP according to sectors.
 - visualization
 - automation
 - graphs were created for a data analysis project with explaination
+- reactive graphs with plotly
+
