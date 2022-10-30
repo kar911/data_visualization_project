@@ -7,7 +7,7 @@ for all the states
 - graphs were created for a data analysis project with explaination
 - reactive graphs with plotly
 
-![](1.png)
+![](6.png)
 ![](2.png)
 ![](3.png)
 ![](4.png)
