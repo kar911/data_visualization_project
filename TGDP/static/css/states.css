@@ -1,0 +1,110 @@
+/* left side state menu  */
+
+
+/* Create a column layout with Flexbox */
+.row {
+    display: flex;
+    max-width: 100%;
+    margin-left: 35px;
+  }
+  
+  /* Left column (menu) */
+  .left {
+    flex: 7%;
+    padding: 13px 0;
+    font-family: emoji;
+    margin-right: 50px;
+    font-weight: 600;
+    word-spacing: -0.7rem;
+  }
+  
+  .left h2 {
+    padding-left: 8px;
+  }
+  
+  /* Right column (page content) */
+  .right {
+    flex: 65%;
+    padding: -2px;
+  }
+  
+  /* Style the search box */
+  #mySearch {
+    width: 100%;
+    font-size: 18px;
+    padding: 11px;
+    border: 1px solid #ddd;
+    margin-left: 3px;
+    margin-top: -11px;
+  }
+  
+  /* Style the navigation menu inside the left column */
+  #myMenu {
+    list-style-type: disclosure-closed;
+    padding: 0;
+    margin: 30px;
+  }
+  
+  #myMenu li a {
+    padding: 12px;
+    text-decoration: none;
+    color: black;
+    display: block
+  }
+  
+  #myMenu li a:hover {
+    background: linear-gradient(to right, #d69709, #e4decffa, #0bb537);
+  }
+  
+  .row {
+    --bs-gutter-x: -0.5rem;
+    --bs-gutter-y: 0;
+  
+  }
+  
+  .row>* {
+    padding-right: calc(var(--bs-gutter-x)/ -1);
+    border: groove;
+    margin-left: -51px;
+  }
+  
+  
+  element.style {
+    background: linear-gradient(to right, #ecc56d, #e4decffa, #178233e3) !important;
+    margin-left: 16px;
+  
+  }
+  
+  .title::before {
+    content: '';
+    background: linear-gradient(to right, #43cea2, #185a9d);
+    height: 5px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(44px);
+  }
+  
+  
+  /* main heading   */
+  
+  
+  h5 {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  font-size: 34px;
+  padding: 80px 50px;
+  margin-top: -40px;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  color: #e0dfdc;
+  background: linear-gradient(to right ,#6dcaac, #578abd);
+  letter-spacing: .1em;
+  text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgb(0 0 0 / 90%);
+  
+  
+  
+  
+  }
+  

@@ -1,0 +1,43 @@
+.navbar .nav-item.active .nav-link,
+.navbar .nav-item:hover .nav-link {
+    color: #ffc107d6 !important;
+    font-weight: 1000 !important;
+  
+    background-color: #1a7292;
+}
+
+
+.navbar {
+background-image: linear-gradient(to right, #43cea2, #185a9d);
+padding: 0 !important;
+}
+
+.navbar-nav li a {
+color: #ffc107 !important;
+font-weight: 900;
+float: center;
+text-align: left;
+font-family: emoji;
+}
+
+#nav-bar {
+position: sticky;
+top: 0;
+z-index: 10;
+border-style: hidden;
+
+
+
+}
+.navbar-brand img {
+height: 38px;
+width: 180px;
+padding-left: 0px;
+mix-blend-mode: unset;
+
+} 
+.navbar-light .navbar-toggler {
+color: rgb(249 11 11 / 0%);
+border-color: rgb(0 0 0 / 14%);
+}
+

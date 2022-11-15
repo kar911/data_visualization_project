@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+
+
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" />
+
+
+    
+  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link href="static/css/navbar.css" rel="stylesheet">
+    <link href="static/css/individualstates.css" rel="stylesheet">
+
+
+
+    <title>Delhi</title>
+
+  
+
+
+    
+
+</head>
+
+<body>
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="/media/newlogo61.png" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/">&nbsp&nbsp&nbsp&nbsp HOME</a>
+                        </li>
+                      
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="/states">&nbsp&nbsp&nbsp&nbsp STATES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/analysis">&nbsp&nbsp&nbsp&nbsp ANALYSIS</a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><input type="image" src="/media/top1.png" width="40" height="40"></button>
+    <br><br><br><br>
+
+
+    <div class="container text-center">
+        <br><br>
+        <h1 >Delhi (City Of Rallies) </h1>
+    </div>
+
+
+
+    <br><br><br><br>
+
+    <!-- Buttons trigger collapse -->
+
+
+    
+
+
+    <div>
+        <diV class="col-md-12 text-center">
+
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample"
+                aria-expanded="false" aria-controls="collapseExample">
+                Select Factor
+            </button>
+
+        </diV>
+
+<br><br><br>
+
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body" id="fac">
+                <table>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li><a href="#1">GDP Per-Capita</a></li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li><a href="#4">Tertiary Sector</a></li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li><a href="#7">Contribution Of Sectors In Andhra Pradesh</a></li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li><a href="#10">Bottom Factors Affecting Gdp </a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li><a href="#2">Primary Sector</a></li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li><a href="#5">Contribution Of Sub-Sectors In Andhra Pradesh</a></li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li><a href="#8">Infant Mortality</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li><a href="#3">Secondary Sector</a></li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li><a href="#6">Sector Tree of Andhra Pradesh</a></li>
+                            </ul>
+
+                        </td>
+                        <td>
+                            <ul>
+                                <li><a href="#9">Top Factors Affecting Gdp</a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+    <!-- ---------------------------------------------------------------------------------------------- -->
+    <br><br>
+    <!-- andhra gdp per capita  -->
+    <hr>
+    <div id="1">
+        <br><br><br>
+        <div class="container px-0">
+                <div class="card text-center">
+                <div class="card-header">
+                    <h5 style="font-weight:bold";><u>GDP Per-Capita</u></h5>
+                
+                </div>
+                </div>
+                <br>
+                
+                    <div class="card-body" id="conclusion">
+                    <p>Per capita gross domestic product (GDP) is a metric that breaks down a country's economic output per
+                        person
+                        and
+                        is calculated by dividing the GDP of a country by its population.</p>
+                    
+                                    </div>
+</div>
+
+     
+
+
+        <br><br>
+        <div class="container px-0">
+        <div class="card" id="c1">
+            {% include './graphs/Delhi_gdp.html' %}
+        </div>
+        </div>
+
+        <br><br>
+        <div class="container ">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            KEY TAKEAWAY 1
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Per capita gross domestic product (GDP) is a metric that breaks down a country's economic
+                            output
+                            per person and is calculated by dividing the GDP of a country by its population.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            KEY TAKEAWAY 2
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Per capita GDP is a global measure for gauging the prosperity of nations and is used by
+                            economists, along with GDP, to analyze the prosperity of a country based on its economic
+                            growth.
+
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            KEY TAKEAWAY 3
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Small, rich countries and more developed industrial countries tend to have the highest per
+                            capita GDP.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <br><br>
+    <!-- andhra primary sector -->
+    <hr>
+    <div id="2">
+        <br><br>
+        <div class="container px-0">
+                <div class="card text-center">
+                <div class="card-header">
+                    <h5 style="font-weight:bold";><u>Primary Sector</u></h5>
+                
+                </div>
+                </div>
+                <br>
+                
+                    <div class="card-body" id="conclusion">
+                    <p>The primary sector of the economy includes any industry involved in the extraction and production of raw
+                        materials, such as farming, logging, hunting, fishing, and mining.he primary sector tends to make up a
+                        larger portion of the economy in developing countries than it does in developed countries.
+
+
+
+                    <P>In developed countries the primary sector has become more technologically advanced, enabling for example
+                        the
+                        mechanization of farming, as compared with hand-picking and -planting in poorer countries. More
+                        developed
+                        economies may invest additional capital in primary means of production. The
+                        technological advances and investment allow the primary sector to employ a smaller workforce, so
+                        developed
+                        countries tend to have a smaller percentage of their workforce involved in primary activities, instead
+                        having a higher percentage involved in the secondary and tertiary sectors.
+
+                    </div>
+</div>
+
+      
+
+
+       
+
+
+        <br><br>
+        <div class="container px-0">
+        <div class="card" id="c1">
+            {% include './graphs/Delhi_pri.html' %}
+        </div>
+        </div>
+
+        <br><br>
+        <div class="container">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            KEY TAKEAWAY 1
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            People engaged in primary activities are called red-collar workers due to the outdoor nature
+                            of
+                            their work.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            KEY TAKEAWAY 2
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Delhi's primary sector has grown over the years
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            KEY TAKEAWAY 3
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            It is called so because it forms the base for all other products. Since most of the natural
+                            products we get are from agriculture, dairy, forestry, fishing, it is also called
+                            Agriculture
+                            and allied sector.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <br><br>
+    <!-- andhra secondry sector  -->
+    <hr>
+    <div id="3">
+        <br><br><br>
+        <div class="container px-0">
+                <div class="card text-center">
+                <div class="card-header">
+                    <h5 style="font-weight:bold";><u>Secondary Sector</u></h5>
+                
+                </div>
+                </div>
+                <br>
+                
+                    <div class="card-body" id="conclusion">
+                    <p>In macroeconomics, the secondary sector of the economy is an economic sector in the three-sector theory
+                which
+                describes the role of manufacturing. It encompasses the industries which produce a finished, usable
+                product
+                or are involved in construction.
+
+            <p>This sector generally takes the output of the primary sector (i.e. raw materials) and creates finished
+                goods
+                suitable for use by other businesses, for export, or for sale to domestic consumers (via distribution
+                through the tertiary sector).Examples include textile production, car manufacturing, and handicraft.
+
+                    </div>
+</div>
+      
+
+
+
+
+
+
+      
+
+
+        <br><br>
+        <div class="container px-0">
+        <div class="card" id="c1">
+            {% include './graphs/Delhi_sec.html' %}
+        </div>
+        </div>
+
+        <br><br>
+        <div class="container">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            KEY TAKEAWAY 1
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            People engaged in secondary activities are called blue collar workers.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            KEY TAKEAWAY 2
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Delhi's secondry sector has grown over the years
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            KEY TAKEAWAY 3
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Eight Core Industries are Electricity, steel, refinery products, crude oil, coal, cement,
+                            natural gas and fertilizers. The Index of Eight Core Industries is a monthly production
+                            index,
+                            which is also considered as a lead indicator of the monthly industrial performance. The
+                            Index of
+                            Eight Core Industries is compiled based on the monthly production information received from
+                            the
+                            Source Agencies.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <br><br>
+    <!-- andhra tertiary  -->
+    <hr>
+    <div id="4">
+        <br><br><br>
+        <div class="container px-0">
+                <div class="card text-center">
+                <div class="card-header">
+                    <h5 style="font-weight:bold";><u>Tertiary Sector</u></h5>
+                
+                </div>
+                </div>
+                <br>
+                
+                    <div class="card-body" id="conclusion">
+                    
+            <p>The tertiary industry is a technical name for the service sector of the economy, which encompasses a wide
+                range of businesses, including financial institutions, schools, hotels, and restaurants.
+            <p>The tertiary industry is one of three primary industrial types in a developed economy, the other two
+                being
+                the primary (i.e., raw materials), and secondary (i.e., goods production) industries. As an economy
+                becomes
+                more developed, it tends to shift its focus from primary to secondary and tertiary industries.
+                    </div>
+</div>
+       
+       
+
+       
+
+        <br><br>
+        <div class="container px-0">
+        <div class="card" id="c1">
+            {% include './graphs/Delhi_ter.html' %}
+        </div>
+        </div>
+
+        <br><br>
+        <div class="container">
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            KEY TAKEAWAY 1
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            People engaged in tertiary activities are called white collar workers.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            KEY TAKEAWAY 2
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            The tertiary industry is the services sector of an economy, encompassing medical providers,
+                            educators, financial services, haircuts, and personal trainers, among many others.
+                            The tertiary sector can be subdivided broadly into for-profit and nonprofit segments.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            KEY TAKEAWAY 3
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Delhi's tertiary sector has grown over the years
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <br><br>
+    <!-- contribution od subsector -->
+    <hr>
+    <div id="5">
+        <br><br><br>
+        <div class="container px-0">
+                <div class="card text-center">
+                <div class="card-header">
+                    <h5 style="font-weight:bold";><u>Contribution of Sub-Sectors in Andaman and Nicobar</u></h5>
+                
+                </div>
+                </div>
+                    </div>
+
+
+
+
+        <br><br>
+
+        <div id="carouselExampleIndicators1" class="carousel slide carousel-fade" data-bs-ride="carousel"
+            data-bs-touch="false" data-bs-interval="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card">
+                        <div class="card-body" id='sub'>
+                            {% include './graphs/Delhi_subcompst2011-12.html' %}
+                        </div>
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="card-body" id='sub'>
+                            {% include './graphs/Delhi_subcompst2015-16.html' %}
+                        </div>
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="card-body" id='sub'>
+                            {% include './graphs/Delhi_subcompst2019-20.html' %}
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </div>
+
+
+
+
+    <br><br>
+    <!-- sector tree -->
+    <hr>
+    <div id="6">
+        <br><br><br>
+        <div class="container px-0">
+                <div class="card text-center">
+                <div class="card-header">
+                    <h5 style="font-weight:bold";><u>Sector Tree of Andaman and Nicobar</u></h5>
+                
+                </div>
+                </div>
+                    </div>
+
+
+
+        <br><br>
+
+        <div id="carouselExampleIndicators2" class="carousel slide carousel-fade" data-bs-ride="carousel"
+            data-bs-touch="false" data-bs-interval="false">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="container px-0">
+                                {% include './graphs/Delhi_aseccompst2011-12.html' %}
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="container px-0">
+                                {% include './graphs/Delhi_aseccompst2015-16.html' %}
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="carousel-item">
+                    <div class="card">
+                        <div class="card-body">
+                            {% include './graphs/Delhi_aseccompst2019-20.html' %}
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+
+
+    <!-- contribution of sectors -->
+    <br><br>
+    <hr>
+    <div id="7">
+        <br><br><br>
+       <div class="container px-0">
+                <div class="card text-center">
+                <div class="card-header">
+                    <h5 style="font-weight:bold";><u>Contribution of Sectors in Andaman and Nicobar</u></h5>
+                
+                </div>
+                </div>
+                    </div>
+
+
+
+
+        <br><br>
+        <div class="container px-0">
+        <div class="card" id="c1">
+            {% include './graphs/Delhi_compst.html' %}
+        </div>
+        </div>
+
+    </div>
+
+
+
+    <br><br>
+
+    <!-- andhra infant mortality -->
+    <hr>
+    <div id="8">
+        <br><br><br>
+        <div class="container px-0">
+                <div class="card text-center">
+                <div class="card-header">
+                    <h5 style="font-weight:bold";><u>Infant Mortality Rate</u></h5>
+                
+                </div>
+                </div>
+              
+              <div class="card-body" id="conclusion">
+                    
+            <p>Infant mortality is the death of young children under the age of 1. This death toll is measured by the
+                infant mortality rate (IMR), which is the probability of deaths of children under one year of age per
+                1000
+                live births. The under-five mortality rate, which is referred to as the child mortality rate, is also an
+                important statistic, considering the infant mortality rate focuses only on children under one year of
+                age.
+        </div>
+        
+
+        
+            
+        </div>
+
+
+
+
+
+
+
+
+        <br><br>
+        <div class="container px-0">
+        <div class="card" id="c1">
+            {% include './graphs/Delhi_infant.html' %}
+        </div>
+        </div>
+    </div>
+
+
+
+    <br><br>
+    <!-- andhra  top 5 factor affecting gdp -->
+    <hr>
+    <div id="9">
+        <br><br><br>
+        <div class="container px-0">
+                <div class="card text-center">
+                <div class="card-header">
+                    <h5 style="font-weight:bold";><u>Top Factors Affecting Gdp</u></h5>
+                
+                </div>
+                </div>
+                </div>
+
+
+        <br><br>
+        <div class="container px-0">
+        <div class="card" id="c1">
+            {% include './graphs/Delhi_grt.html' %}
+        </div>
+        </div>
+    </div>
+
+
+
+    <br><br>
+    <!-- andhra  bottom 5 factor affecting gdp -->
+    <hr>
+    <div id="10">
+        <br><br><br>
+       <div class="container px-0">
+                <div class="card text-center">
+                <div class="card-header">
+                    <h5 style="font-weight:bold";><u>Bottom Factors Affecting Gdp</u></h5>
+                
+                </div>
+                </div>
+                </div>
+
+
+
+
+        <br><br>
+        <div class="container px-0">
+        <div class="card" id="c1">
+            {% include './graphs/Delhi_grb.html' %}
+        </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+    <script src="/static/js/top.js"></script>
+
+
+</body>
+
+</html>
